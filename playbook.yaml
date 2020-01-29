@@ -1,0 +1,10 @@
+---
+- name: install jenkins
+  hosts: all
+  become: yes
+  become_method: sudo
+  become_user: root
+  roles:
+    - geerlingguy.java
+    - geerlingguy.jenkins
+  
